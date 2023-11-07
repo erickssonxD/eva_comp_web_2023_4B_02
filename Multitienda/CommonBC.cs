@@ -7,20 +7,19 @@ namespace Multitienda.Negocio
 {
     public class CommonBC
     {
-        private static MultitiendaEntities _modeloMultitienda;
-
-        public static MultitiendaEntities ModeloMultitienda
+        private static MultitiendaEDM _modeloMultitienda;
+        public static MultitiendaEDM ModeloMultitienda
         {
             get
             {
                 if (_modeloMultitienda == null)
                 {
-                    _modeloMultitienda = new MultitiendaEntities();
+                    _modeloMultitienda = new MultitiendaEDM();
                 }
                 return _modeloMultitienda;
             }
         }
-
+        
         public CommonBC()
         {
 
